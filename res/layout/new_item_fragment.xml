@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+            android:textColor="@color/notepad_text"
+            android:layout_weight="93"
+            android:id="@+id/myEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/addItemHint"
+            android:contentDescription="@string/addItemContentDescription"
+            />
+    <ImageButton
+            android:id="@+id/pickDateButton"
+            android:background="@null"
+            android:layout_weight="7"
+            android:src="@drawable/calendar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    <ImageButton
+            android:visibility="gone"
+            android:id="@+id/addButton"
+            android:src="@drawable/plus"
+            android:background="@null"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+</LinearLayout>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ru.igaleksus.todolist.ToDoListItemView
+
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/notepad_text"
+            android:fadingEdge="vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/todo_list_item_view"/>
+    <TextView
+            android:id="@+id/rowDate"
+            android:background="@color/notepad_paper"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:fadingEdge="vertical"
+            android:textColor="#ff000000"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:alpha="0.5"/>
+
+    <CheckBox
+            android:focusable="false"
+            android:layout_marginLeft="3dp"
+            android:padding="10dp"
+            android:fadingEdge="vertical"
+            android:scrollbars="vertical"
+            android:layout_alignParentLeft="true"
+            android:alpha="0.6"
+            android:button="@drawable/cbselector"
+            android:id="@+id/done_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>
